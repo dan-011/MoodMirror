@@ -7,3 +7,6 @@ keras
 tensorflow
 seaborn
 opencv-python
+fastapi
+uvicorn
+opencv

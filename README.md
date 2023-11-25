@@ -5,7 +5,7 @@
 [Proposal Link](https://docs.google.com/document/d/1SZxvgO6slOHLQc_zVqJpW-hWD_TaRWTL0fOREhcHuAI/edit?usp=sharing)
 
 ## Usage
-It may be advantageous to run this locally and not in colab. If so, it's best to do that with a virtual environment because of all the required dependencies. These are the steps I used for easy setup.
+For windows, launch the "launch-for-windows.ps1" powershell script. The application should open in a web browser. Be sure to allow webcam access, then press "Predict Emotion" to predict the emotion of the person on the webcam.
 
 #### Install virtualenv
 ```powershell
