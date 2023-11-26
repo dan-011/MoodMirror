@@ -44,12 +44,12 @@ h1 {
 
 .emotion-button {
   appearance: button;
-  background-color: #1899D6;
+  background-color: #185c7c;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
   box-sizing: border-box;
-  color: #D3D3D3;
+  color: #e6e6e6;
   cursor: pointer;
   display: inline-block;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -75,7 +75,7 @@ h1 {
 
 .emotion-button:after {
   background-clip: padding-box;
-  background-color: #1CB0F6;
+  background-color: #34bcfc;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
