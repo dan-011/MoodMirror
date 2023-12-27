@@ -40,6 +40,7 @@ h1 {
   -webkit-text-stroke-width: var(--stroke-width);
   margin: 4%;
   margin-bottom: 0;
+  margin-top: 0%;
 }
 
 .emotion-button {

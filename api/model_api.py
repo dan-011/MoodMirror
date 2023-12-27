@@ -14,19 +14,31 @@ class Item(BaseModel):
 app = FastAPI()
 
 face_cascade = cv2.CascadeClassifier(os.path.join('dependencies','haarcascade_frontalface_alt2.xml'))
-model = load_model(os.path.join('dependencies','advanced_model.h5'))
+model_path = os.path.join("..", "models")
+model_name = "best_acc_model_66_rmsprop.h5"
+#model_name = "best_loss_model_64_adam.h5"
+model = load_model(os.path.join(model_path, model_name))
+print(os.path.join(model_path, model_name))
 model.compile(loss='categorical_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
+#emotions = {
+#    0:'Anger', # correct
+#    1:'Fear', # correct
+#    2:'Happiness', # correct
+#    3:'Neutral', # correct
+#    4: 'Sadness', # correct
+#    5:'Surprise', # correct
+#}
 emotions = {
     0:'Anger', # correct
-    1:'Fear', # correct
-    2:'Happiness', # correct
-    3:'Neutral', # correct
-    4: 'Sadness', # correct
-    5:'Surprise', # correct
+    1:'Disgust', 
+    2:'Fear', # correct
+    3:'Happy', # correct
+    4: 'Neutral', # correct
+    5:'Sadness', # correct
+    6: 'Surprise' # correct
 }
-
 origins = ["*"]
 
 app.add_middleware(
